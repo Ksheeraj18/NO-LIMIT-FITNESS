@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NO LIMIT FITNESS</title>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><i class="fas fa-dumbbell"></i><span> NO LIMIT FITNESS</span></div>
+			<ul>
+				<a href="index.html"><li>Home</li></a>				
+				<a href="service.html"><li>Services</li></a>
+				<a href="ns.html"><li>Nutrition services</li></a>
+				<a href="faq.html"><li>FAQ'S</li></a>
+				<a href="signup.html"><li>Login</li></a>
+				<a href="contact.html"><li>Contact</li></a>
+			</ul>	
+        </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ'S</title>
+    
+</head>
+<style>
+    
+        /* Style the FAQ section */
+        .faq-container {
+        background-image: url(https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltc3xlbnwwfHwwfHx8MA%3D%3D);
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top: 0.5rem solid #ec4141;
+	    border-bottom: 0.5rem solid #ec4141;
+        border-left:0.5rem solid #ec4141 ;
+        border-right: 0.5rem solid #ec4141;
+        width: auto;
+        height: auto;
+        }
+        nav{
+	        display: flex;
+	        height: 90px;
+            background-color: #fff;
+        }
+
+        nav .logo{
+            color: rgb(10, 10, 10);
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bolder;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+
+         nav .logo span{
+            color: black;
+            font-size: 32px;
+            margin-left: 5px;
+        }
+
+        nav ul{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        nav ul li{
+            list-style: none;
+
+        }
+
+        nav ul .active{
+            border-bottom: 2px solid #ec4141;
+            color: #ec4141;
+
+        }
+
+        nav ul a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            padding: 1rem 1.2rem;
+            margin: 0 0.3rem;
+            color: black;
+        }
+
+        nav ul a:hover{
+            border-bottom: 2px solid #ec4141;
+            color: #ec4141;
+        }
+
+
+        /* Style the FAQ title */
+        .faq-container h2 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #f7f0f0;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin:auto;
+        padding: 20px;
+        background-color: rgba(243, 241, 241, 0.7);
+        border-radius: 100px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: rgb(9, 9, 9);
+
+        }
+
+        /* Style the FAQ list */
+        #faq-section ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+
+        /* Style the FAQ items */
+        #faq-section li {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        }
+
+        /* Style the FAQ links */
+        #faq-section a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #f2efef;
+        font-size: 18px;
+        font-weight: bold;
+        }
+
+        /* Style the FAQ icons */
+        #faq-section a i {
+        float: right;
+        margin-left: 10px;
+        }
+
+        /* Style the FAQ answers */
+        #faq-section div {
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+        color: #333;
+        font-size: 16px;
+        line-height: 1.5;
+        }
+
+        /* Style the FAQ tables */
+        #faq-section table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+        }
+
+        /* Style the FAQ table headers */
+        #faq-section th {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+        }
+
+        /* Style the FAQ table cells */
+        #faq-section td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        }
+
+        /* Style the FAQ external links */
+        #faq-section p a {
+        color: #333;
+        text-decoration: underline;
+        }
+
+        /* Add a hover effect to the FAQ links */
+        #faq-section a:hover {
+        background-color: #333;
+        color: #fff;
+        }
+
+        /* Add a hover effect to the FAQ external links */
+        #faq-section p a:hover {
+        color: #333;
+        text-decoration: none;
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 5px;
+
+
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .faq-item {
+            max-width: 10000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            color: whitesmoke;
+        }
+        .question .active{
+            border-bottom: 2px solid #ec4141;
+	        color: #ec4141;
+
+
+        }
+
+
+</style>
+
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q1')">Q: How often should I work out?</div>
+        <div class="answer" id="q1">A:  How often you should train is totally dependent on your goals, lifestyle, schedule and fitness level. 
+
+            Beginners should start with 2 to 3 training sessions per week. This will help you build up your fitness level while giving your body proper rest between training sessions. 
+            
+            Once your workouts start to feel easier, consider adding on more training days. Shoot for 4 to 5 training days per week when you feel ready. 
+            
+            Make sure to include active recovery days in between your harder workout sessions. Activities like walking, light jogging or yoga can help you recover quicker while still keeping you active throughout the week. </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q2')">Q: How Long Should My Workouts Be? </div>
+        <div class="answer" id="q2">A: It’s about the quality of your workout, not the quantity (of minutes). How long you train is totally dependent on your lifestyle and schedule. A 20-minute workout can be just as effective as an hour-long sweat sesh depending on your training intensity. 
+
+            According to the Center for Disease Control and Prevention (CDC), adults should get at least 150 minutes of exercise per week. That could be 30 minutes a day, 5 days a week, but you can schedule your minutes any way you wish. 
+            
+            No matter if you’re new to fitness, have taken a long break or are looking to step up your routine, our huge variety of Gymondo training programs will help you build consistency in your training routine. Consistency is the number one goal when trying to make fitness a long-term commitment. 
+            
+            Just remember: Doing something is better than doing nothing. Within the Gymondo app, you’ll find workouts ranging from 5 to 40 minutes so you can easily fit fitness into your lifestyle. There’s literally something for everyone. </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q3')">Q: Do I Need to Warm-Up? </div>
+        <div class="answer" id="q3">A: Absolutely! We get it—it’s so tempting to skip the warm-up and jump straight in, but it’s a good way to get injured. A solid warm-up prepares your body for more intense work by raising your body temperature and increasing blood flow to your working muscles. 
+
+            Five minutes is all you need to get in some dynamic stretching to prepare your muscles for what lies ahead. Within the Gymondo app, you’ll find optional 5-minute warm-ups before every workout. </div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q4')">Q: Is Strength Training or Cardio Better? </div>
+        <div class="answer" id="q4">A: We recommend a combination of strength training and cardio to ensure your training routine is balanced and to reduce boredom. 
+
+            Strength training burns calories just like any other form of exercise. Since muscle has a higher metabolic rate than fat, having more of it increases calorie burn. Additionally, strength training improves bone mineral density, increases muscle mass and promotes better posture. 
+            
+            Cardio increases your heart rate to the fat-burning zone and keeps it elevated continuously for the duration of the workout to enhance cardiovascular health, lung function and energy levels. 
+            
+            Both strength training and cardio help you to burn more calories each day and reach a caloric deficit to lose body fat. If you structure your strength training into a circuit-style workout, you’ll keep your heart rate elevated to burn even more calories. </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q5')">Q: How Do I Stay Motivated to Continue Working Out? </div>
+        <div class="answer" id="q5">A: You were super motivated when you started your fitness journey but somewhere along the way, those feelings faded. This is perfectly normal—you’re human, after all! 
+
+            There will be days where working out is the last thing you want to do. And there will be other days where you’re raring to go.
+            
+            Here are some tips that will keep you motivated to keep moving:
+            
+            Set goals for yourself. Anything from completing a challenge to doing a specific number of workouts per week will help hold yourself accountable. 
+            Plan your workouts in advance. This will help you establish a regular workout routine and make exercise a habit. 
+            Keep reminding yourself of how you feel after a workout. From more energy to increased happiness, the benefits of exercise are endless. 
+            Find a workout partner to hold you accountable and collectively share your fitness milestones. 
+            Choose training styles you actually enjoy. There’s no reason to continue running on the treadmill if you hate it. The choices are endless, so choose wisely. </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q6')">Q: What Time of Day Should I Work Out? </div>
+        <div class="answer" id="q6">A: There’s much debate when it comes to the best time of day to work out. And to be honest, there’s no right or wrong answer. After all, exercise isn’t about how many calories you burn or what time of day you train—it’s more about how you feel when you’re doing it and how it can fit into your daily schedule. So, the best time to work out is whenever you can. </div>
+    </div>
+
+  
+
+</div>
+
+<script>
+    function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    }
+</script>
+
+
+</body>
+</html>

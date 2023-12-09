@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body {font-family: 'Lato', sans-serif;}
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+	display: flex;
+	height: 90px;
+    background-color: #fff;
+}
+
+nav .logo{
+	color: rgb(9, 9, 9);
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	font-weight: bolder;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+nav .logo span{
+	color: black;
+	font-size: 32px;
+	margin-left: 5px;
+}
+
+nav ul{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+nav ul li{
+	list-style: none;
+
+}
+
+nav ul .active{
+	border-bottom: 2px solid #ec4141;
+	color: #ec4141;
+
+}
+
+nav ul a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	padding: 1rem 1.2rem;
+	margin: 0 0.3rem;
+	color: black;
+}
+
+nav ul a:hover{
+	border-bottom: 2px solid #ec4141;
+	color: #ec4141;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body {font-family: 'Lato', sans-serif;}
+
+.inner-box {
+    width: 400px;
+margin: 0 auto;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+padding: 20px 40px;
+border-radius: 8px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 2px 2px 2px 2px blue;
+}
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+.signup-header .input-box {
+    font-size: 0.9rem;
+    color: #555;
+}
+.signup-body {
+    margin: 20px 0;
+}
+.signup-body .input-box {
+    margin: 10px 0;
+}
+.signup-body .input-box label {
+    display: block;
+    font-weight: bold;
+
+}
+
+.signup-body .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc; 
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+
+}
+.signup-body .input-box input[type="submit"] {
+    background-color: #2773a5;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.signup-footer .input-box {
+    color: #555;
+    text-align: center;
+
+}
+.signup-footer .input-box a {
+    color: #2773a5;
+    text-decoration: none;
+}
+.input-box a:hover {
+    text-decoration: underline;
+}
+.input-box .icon {
+    position: absolute;
+    right: 50px;
+    color: black;
+    font-size: 1.2em;
+    line-height: 100px;
+}
+.input-box label:hover {
+    transform: translateY(-50%);
+    transition-duration: .5s;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NO LIMIT FITNESS</title>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><i class="fas fa-dumbbell"></i><span> NO LIMIT FITNESS</span></div>
+			<ul>
+				<a href="index.html"><li>Home</li></a>				
+				<a href="service.html"><li>Services</li></a>
+				<a href="ns.html"><li>Nutrition services</li></a>
+				<a href="faq.html"><li>FAQ's</li></a>
+				<a href="signup.html"><li>Login</li></a>
+				<a href="contact.html"><li>Contact</li></a>
+			</ul>	
+        </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('http://wallsdesk.com/wp-content/uploads/2016/10/Gym-HD-Background-.jpg');  
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 75%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #FF5722;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #D84315;
+        }
+
+        .animated-text {
+            font-size: 24px;
+            animation: fadeInUp 1s ease-in-out infinite alternate;
+        }
+        nav{
+	        display: flex;
+	        height: 90px;
+            background-color: #fff;
+        }
+
+        nav .logo{
+            color: white;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bolder;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+
+         nav .logo span{
+            color: black;
+            font-size: 32px;
+            margin-left: 5px;
+        }
+
+        nav ul{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        nav ul li{
+            list-style: none;
+
+        }
+
+        nav ul .active{
+            border-bottom: 2px solid #ec4141;
+            color: #ec4141;
+
+        }
+
+        nav ul a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            padding: 1rem 1.2rem;
+            margin: 0 0.3rem;
+            color: black;
+        }
+
+        nav ul a:hover{
+            border-bottom: 2px solid #ec4141;
+            color: #ec4141;
+        }
+
+
+            @keyframes fadeInUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="animated-text">We'd love to hear from you!</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+            </div>
+            <button type="submit" onclick="auth()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function auth(){
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var feedback = document.getElementById("feedback").value;
+            window.location.assign("index.html");
+            alert("Thanks for your valiable response");
+
+                
+            
+        }
+    </script>
+</body>
+</html>

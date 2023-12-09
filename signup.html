@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NO LIMIT FITNESS</title>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><i class="fas fa-dumbbell"></i><span> NO LIMIT FITNESS</span></div>
+			<ul>
+				<a href="index.html"><li>Home</li></a>				
+				<a href="service.html"><li>Services</li></a>
+				<a href="ns.html"><li>Nutrition services</li></a>
+				<a href="faq.html"><li>FAQ'S</li></a>
+				<a href="signup.html"><li>Login</li></a>
+				<a href="contact.html"><li>Contact</li></a>
+			</ul>	
+        </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+
+    <div class="outer-box">
+    <div class="inner-box">
+    <header class="signup-header">
+    <h1>Signup</h1>
+    <p>It will take 30 seconds</p></header>
+    <main class="signup-body">
+        <form action=""  onsubmit="validateForm(event)">
+            <div class="input-box">  
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>           
+                <label for="username">Full Name</label>
+                <input type="text" id="username" placeholder="Enter your fullname" name="username" required>
+            </div>
+            <div class="input-box">   
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>            
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="input-box">      
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>         
+                <label for="password">Your New Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your new password" >
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <label for="confirmPassword">Confirm your New Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter to confirm your new password" >
+            </div>
+            <div class="input-box">
+                <input type="submit" id="submit" value="Create Account">
+            </div>
+        </form>
+    </main>
+
+    <footer class="signup-footer">
+        <div class="input-box">Already Have an Account? <a href="login.html" >Login</a> </div>
+
+    </footer>
+    </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function validateForm(event) {
+        event.preventDefault();
+
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        
+        if (username === 'admin' || email === 'admin@gmail.com' || password === 'admin1234' || confirmPassword === 'admin1234') {
+            alert('Signup successful!');
+            window.location.assign("index.html");
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            alert('Passwords do not match');
+            return;
+        }
+
+    }
+</script>
+</body>
+</html>

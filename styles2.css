@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?cs=srgb&dl=action-athlete-barbell-841130.jpg&fm=jpg) no-repeat;
+    background-size: cover;
+    background-position: center; 
+
+
+}
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, .5); 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    box-shadow: 2px 2px 2px 2px blue;
+}
+h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+    
+}
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,.input-box input:valid~label {
+    top: -5px;
+
+}
+.input-box input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #cccc; 
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 25px;
+
+}
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    line-height: 100px;
+}
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+
+}
+.remember-forgot label input {
+    margin-right: 3px;
+
+
+}
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+button {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+.register-link {
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register-link p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 360px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+}
+.input-box {
+    width: 290px;
+}
+button[type="submit"] {
+    background-color: #2773a5;
+}
+.remember-forgot a {
+    color: #2773a5;
+}
+.register-link p a {
+    color: #2773a5;
+}
+nav{
+	display: flex;
+	height: 90px;
+}
+
+nav .logo{
+	color: rgb(16, 15, 15);
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	font-weight: bolder;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+nav .logo span{
+	color: #110e0e;
+	font-size: 32px;
+	margin-left: 5px;
+}
+
+nav ul{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+nav ul li{
+	list-style: none;
+
+}
+
+nav ul .active{
+	border-bottom: 2px solid #ec4141;
+	color: #ec4141;
+
+}
+
+nav ul a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	padding: 1rem 1.2rem;
+	margin: 0 0.3rem;
+	color:black;
+}
+
+nav ul a:hover{
+	border-bottom: 2px solid #ec4141;
+	color: #ec4141;
+
+}

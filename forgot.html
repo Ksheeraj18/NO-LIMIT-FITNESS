@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(https://i.shgcdn.com/d61f124a-5eb2-41c7-abd1-ace0dd6f7d97/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+            background-repeat: no-repeat;
+            background-size: cover;
+            backface-visibility: visible;
+           
+        }
+
+        .forgot-password-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px 2px blue;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+           
+        }
+        .form-group label:hover {
+            transform: translateY(-50%);
+            transition: .5s;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-group .icon {
+            position: absolute;
+            right: 620px;
+            color: black;
+            font-size: 1.2em;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="forgot-password-container">
+    <h2>Forgot Password</h2>
+    <p>Enter your email address to reset your password.</p>
+    <form id="forgotPasswordForm">
+        <div class="form-group">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <button type="button" onclick="resetPassword()">Reset Password</button>
+    </form>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function resetPassword() {
+        var email = document.getElementById('email').value;
+        window.location.assign("index.html");
+        alert('Password reset link sent to ' + email);
+    }
+</script>
+
+</body>
+</html>

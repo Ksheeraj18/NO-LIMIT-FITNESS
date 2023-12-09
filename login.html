@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NO LIMIT FITNESS</title>
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><i class="fas fa-dumbbell"></i><span> NO LIMIT FITNESS</span></div>
+			<ul>
+				<a href="index.html"><li>Home</li></a>				
+				<a href="service.html"><li>Services</li></a>
+				<a href="ns.html"><li>Nutrition services</li></a>
+				<a href="faq.html"><li>FAQ'S</li></a>
+				<a href="signup.html"><li>Login</li></a>
+				<a href="contact.html"><li>Contact</li></a>
+			</ul>	
+        </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body><section>
+<div class="login-box">
+    <form action="" onsubmit="validateForm(event)">
+        <h2>Login</h2>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" placeholder="Enter your email" name="password" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" placeholder="Enter your password"  name="password" id="password" required>
+            <label for="password">Password</label>
+        </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="forgot.html">Forgot Password?</a>
+        </div>
+        <button type="submit">Login</button>
+        
+    </form>
+</div></section>   
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function validateForm(event) {
+        event.preventDefault();
+
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        
+        if (email === 'admin@gmail.com' || password === 'admin1234') {
+            window.location.assign("index.html");
+            alert('Login successful!');
+
+            return;
+        }
+
+       
+        alert('Login successful!');
+       
+    }
+</script>
+</body>
+</html>
